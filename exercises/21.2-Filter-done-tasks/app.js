@@ -10,3 +10,5 @@ let tasks = [
 ];
 
 //your code here
+let doneTasks = tasks.filter(x => !x.done);
+console.log(doneTasks);

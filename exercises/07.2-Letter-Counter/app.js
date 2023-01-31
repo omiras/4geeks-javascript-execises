@@ -2,5 +2,13 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
+par = par.replaceAll(' ', '');
+
+for (let i=0;i<par.length;i++) {
+
+    let nextLetter = par[i].toLowerCase();
+
+    counts[nextLetter] =  counts[nextLetter] ? counts[nextLetter] + 1 : 1
+}
 
 console.log(counts);
